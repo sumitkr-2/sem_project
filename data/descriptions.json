@@ -1,0 +1,26 @@
+{
+    "Paracetamol": {
+        "description": "Paracetamol is commonly used to reduce fever and relieve mild to moderate pain. It is widely available and considered safe when taken as directed.",
+        "who_should_take": "Recommended for individuals with fever, headaches, muscle pain, or mild arthritis pain.",
+        "who_should_avoid": "Avoid if you have liver disease, alcohol dependency, or an allergy to acetaminophen.",
+        "precautions": "Do not exceed the recommended dosage. Overdose can cause severe liver damage."
+    },
+    "Dextromethorphan": {
+        "description": "Dextromethorphan is a cough suppressant that helps reduce the urge to cough, making it useful for treating dry, non-productive coughs.",
+        "who_should_take": "Suitable for adults and children over 12 who have persistent dry coughs.",
+        "who_should_avoid": "Not recommended for children under 4, people with asthma, or those taking MAOI antidepressants.",
+        "precautions": "Avoid alcohol and other sedatives while taking this medicine, as it can cause drowsiness."
+    },
+    "Antihistamine": {
+        "description": "Antihistamines are used to relieve allergy symptoms such as sneezing, itching, and runny nose. They are also used for cold symptoms and motion sickness.",
+        "who_should_take": "People with seasonal allergies, cold symptoms, or mild allergic reactions.",
+        "who_should_avoid": "Avoid if you have glaucoma, an enlarged prostate, or are taking sedatives.",
+        "precautions": "Some antihistamines cause drowsiness; avoid driving or operating machinery after taking them."
+    },
+    "Ibuprofen": {
+        "description": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) that reduces pain, inflammation, and fever.",
+        "who_should_take": "Recommended for individuals with muscle pain, headaches, menstrual cramps, or mild arthritis pain.",
+        "who_should_avoid": "Avoid if you have a history of stomach ulcers, kidney disease, or are allergic to NSAIDs.",
+        "precautions": "Take with food to reduce stomach irritation. Long-term use can increase the risk of heart attack or stroke."
+    }
+}

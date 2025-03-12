@@ -1,5 +1,11 @@
 /* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
 body {
+     
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +13,7 @@ body {
 }
 
 header {
-    background: #007bff;
+    background: black;
     color: white;
     padding: 1em;
 }
@@ -28,18 +34,105 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-section {
-    margin: 20px;
+/* 
+/*medicince suugestoor box
+name i have given as 
+
+    <section id="medicine-suggester">
+        <h2>Enter Symptoms or Prescription</h2>
+        <input type="text" id="symptoms" placeholder="E.g., Fever, Cough">
+        <button onclick="suggestMedicine()">Suggest Medicine</button>
+        <p id="suggested-medicine">
+            <div class="description" id="descr"></div>
+            <div class="image" id="medi_img"></div>
+            <div class="caution" id="medi_caution"></div>
+        </p>
+    </section>
+    */
+
+#medicine-suggester{
+  
+    margin-top: 1rem;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 96vh;
+    width: 90vw;
+    margin-left: 4rem;
+    /* background-image: url(/assets/images/back.jpg); */
 }
 
-input, button {
-    padding: 10px;
+
+#symptoms{
+    height: 2rem;
+    width: 10rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     margin: 10px;
-    font-size: 1em;
+    box-shadow: 1px 5px 50px 1px white;
 }
 
-#map {
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
+#suggest_button{
+    height: 3.5rem;
+    background-color: rgb(79, 225, 79);
+    border-radius: 50px 50px ;
+    border-color: aqua;
+    box-shadow: 1px 1px 4px 1px greenyellow;
+    font-weight: bold;
+    
 }
+
+#suggested-medicine{
+display: flex;
+height: 80%;
+width: 96%;
+}
+
+/* #suggested-medicine.show {
+    display: flex; 
+} */
+#descr{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+   height: 50%; 
+   width: 100%;
+   background-color: beige;
+}
+
+#right{
+  height: 100%;
+  width: 30%;
+  background-color: black;
+
+}
+#medi_caution{
+    height: 50%;
+    width: 100%;
+    padding-top: 4rem;
+    background-color: rgb(93, 0, 255);
+}
+ .medi_img{
+    height: 70%;
+    width: 100%;
+    background-color: rgb(255, 0, 234);
+ }
+.other_medi{
+  height: 30%;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.left{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+

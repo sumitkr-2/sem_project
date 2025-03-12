@@ -11,12 +11,16 @@
 </head>
 <body>
     <header>
-        <h1>Medicine Suggester</h1>
+        <h1>Medicine Cum Doctor Suggester</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="doctors.html">Find Doctors</a></li>
-                <li><a href="medicines.html">Medicine Info</a></li>
+                <li><a href="/pages/contact.html">Find Best Doctors</a></li>
+                <li><a href="medicines.html">Medicine prices</a></li>
+                <li><a href="medicines.html">Medicine usage</a></li>
+                <li><a href="medicines.html">Heath care tips</a></li>
+                <li><a href="medicines.html">Consult Doctors for free</a></li>
+                <li><a href="medicines.html">Buy medicine</a></li>
             </ul>
         </nav>
     </header>
@@ -24,10 +28,23 @@
     <section id="medicine-suggester">
         <h2>Enter Symptoms or Prescription</h2>
         <input type="text" id="symptoms" placeholder="E.g., Fever, Cough">
-        <button onclick="suggestMedicine()">Suggest Medicine</button>
-        <p id="suggested-medicine"></p>
+        <button onclick="suggestMedicine()" id="suggest_button">Suggest Medicine</button>
+    
+        <div id="suggested-medicine">
+            <div class="left">
+               <div class="description" id="descr">
+                
+                <div id="details"></div>
+               </div>
+               <div class="caution" id="medi_caution"></div>
+            </div>
+            <div class="right" id="right">
+                <div class="medi_img"></div>
+                <div class="other_medi"></div>
+            </div>
+        </div>
     </section>
-
+    
     <section id="doctor-locator">
         <h2>Find Best Doctors Near You</h2>
         <input type="text" id="location" placeholder="Enter City or ZIP Code">
@@ -39,8 +56,8 @@
         <p>&copy; 2025 Medicine Suggester</p>
     </footer>
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
 
-    <script src="/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

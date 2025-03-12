@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Suggester</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Medicine Suggester</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="medicines.html">Medicine Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="medicine-suggester">
+        <h2>Enter Symptoms or Prescription</h2>
+        <input type="text" id="symptoms" placeholder="E.g., Fever, Cough">
+        <button onclick="suggestMedicine()">Suggest Medicine</button>
+        <p id="suggested-medicine"></p>
+    </section>
+
+    <section id="doctor-locator">
+        <h2>Find Best Doctors Near You</h2>
+        <input type="text" id="location" placeholder="Enter City or ZIP Code">
+        <button onclick="findDoctors()">Search</button>
+        <div id="map"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Medicine Suggester</p>
+    </footer>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
